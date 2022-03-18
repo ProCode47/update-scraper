@@ -2,7 +2,7 @@ const puppet = require("puppeteer");
 
 const scrapeJobs = async () => {
   //launch puppet
-  const browser = await puppet.launch({ args: [
+  const browser = await puppet.launch({headless: true, args: [
     '--no-sandbox',
     '--disable-setuid-sandbox',
   ]});
